@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시작"
+        android:id="@+id/btn_start"
+        android:onClick="onClickStart"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:id="@+id/grid_1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문제"
+            android:textSize="8pt"
+            android:id="@+id/tv_q"/>
+
+        <EditText
+            android:id="@+id/et_q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBaseline="@+id/tv_q"
+            android:layout_toRightOf="@+id/tv_q" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정답"
+            android:textSize="8pt"
+            android:layout_below="@+id/tv_q"
+            android:id="@+id/tv_a"/>
+
+        <EditText
+            android:id="@+id/et_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBaseline="@+id/tv_a"
+            android:layout_toRightOf="@+id/tv_a"
+            />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_a"
+            android:layout_weight="1"
+            android:text="결과"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/et_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignBaseline="@+id/tv_result"
+            android:layout_toRightOf="@+id/tv_result"
+            android:background="#FFE79D"/>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_below="@+id/tv_a"
+            android:layout_alignBaseline="@+id/tv_result"
+            android:layout_toRightOf="@+id/tv_result"
+            android:text="정답 횟수"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignBaseline="@+id/tv_result"
+            android:layout_toRightOf="@+id/et_count"
+            android:background="#FFE79D"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="60"
+            android:progress="0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="남은 시간이 표시됩니다."
+            android:id="@+id/tv_last"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:backgroundTint="#9CCC65"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:backgroundTint="#9CCC65"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:backgroundTint="#9CCC65"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:backgroundTint="#FFA726"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:backgroundTint="#FFA726"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:backgroundTint="#FFA726"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:backgroundTint="#EF5350"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:backgroundTint="#EF5350"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:backgroundTint="#EF5350"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:backgroundTint="#7E57C2"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:backgroundTint="#7E57C2"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:backgroundTint="#7E57C2"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:text="취소" />
+
+    </GridLayout>
+
+</LinearLayout>
