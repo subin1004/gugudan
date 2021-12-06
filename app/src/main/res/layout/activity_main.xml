@@ -242,6 +242,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="Second Branch commit2"/>
+        android:text="Second Branch fetch commit"/>
 
 </LinearLayout>
