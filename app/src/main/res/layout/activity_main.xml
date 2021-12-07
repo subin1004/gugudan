@@ -243,4 +243,5 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="Branch rebase commit"/>
+
 </LinearLayout>
